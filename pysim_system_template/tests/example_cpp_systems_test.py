@@ -1,7 +1,7 @@
 """Some tests for the example cpp systems"""
 
 from pysim.simulation import Sim
-from pysim_example_template.systems.example_cpp_systems import ExampleSystem
+from pysim_system_template.systems.example_cpp_systems import ExampleSystem
 
 def test_example_system():
     """Test the example system against a known solutin"""
