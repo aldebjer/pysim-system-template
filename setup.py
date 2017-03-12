@@ -13,7 +13,9 @@ config.add_include_dirs([pysim.info.get_include(), numpy.get_include()])
 
 extracompileargs = []
 if sys.platform == "win32":
-    config.add_include_dirs([os.environ.get('BOOST_ROOT')])
+    config.add_include_dirs([os.environ.get('BOOST_ROOT'),
+                             os.environ['EIGEN_ROOT']
+                            ])
 elif sys.platform == "linux":
     extracompileargs.append("-std=c++11")
 
